@@ -1,5 +1,9 @@
 #!/usr/bin/python3
 
+ """
+ perimeter of island
+    """
+
 
 def island_perimeter(grid):
     if not grid or not grid[0]:
@@ -20,4 +24,5 @@ def island_perimeter(grid):
                 if j > 0 and grid[i][j - 1] == 1:
                     perimeter -= 2  # Subtract two sides (left and right)
 
-    return perimeteir
+    return perimeter
+
